@@ -358,5 +358,53 @@
                 </div>
             </div>
 
+            <div id="ai-insights" class="tab-content hidden">
+                <div class="header">
+                    <h1>AI-Powered Insights</h1>
+                    <p>Machine learning recommendations and intelligent automation</p>
+                </div>
+                
+                <div class="ai-insights">
+                    <div class="chart-title" style="color: white;">AI Recommendations</div>
+                    <div class="insight-item">
+                        <div style="font-weight: bold; margin-bottom: 10px;">🎯 Production Optimization</div>
+                        <div>Increase Line 3 throughput by 12% by adjusting temperature settings and reducing cycle time by 0.3 seconds.</div>
+                        <div style="margin-top: 10px;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 15px; font-size: 12px;">Confidence: 94%</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 15px; font-size: 12px; margin-left: 10px;">Impact: High</span>
+                        </div>
+                    </div>
+                    <div class="insight-item">
+                        <div style="font-weight: bold; margin-bottom: 10px;">⚡ Energy Optimization</div>
+                        <div>Shift 23% of energy-intensive operations to off-peak hours to reduce costs by $18,000/month.</div>
+                        <div style="margin-top: 10px;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 15px; font-size: 12px;">Confidence: 89%</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 15px; font-size: 12px; margin-left: 10px;">Impact: Medium</span>
+                        </div>
+                    </div>
+                    <div class="insight-item">
+                        <div style="font-weight: bold; margin-bottom: 10px;">🔄 Supply Chain Adjustment</div>
+                        <div>Alternative supplier in Vietnam can reduce raw material costs by 8% while maintaining quality standards.</div>
+                        <div style="margin-top: 10px;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 15px; font-size: 12px;">Confidence: 76%</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 15px; font-size: 12px; margin-left: 10px;">Impact: High</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="implementRecommendation()">Implement Top Recommendation</button>
+                    <button class="btn btn-secondary" onclick="analyzeMoreData()">Analyze More Data</button>
+                </div>
+
+                <div class="chart-container" style="margin-top: 20px;">
+                    <div class="chart-title">AI Model Performance</div>
+                    <div class="chart">
+                        <canvas id="ai-performance-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+
 </body>
 </head>
