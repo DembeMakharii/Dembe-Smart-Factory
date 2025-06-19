@@ -404,7 +404,91 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div id="settings" class="tab-content hidden">
+                <div class="header">
+                    <h1>System Settings</h1>
+                    <p>Configure your SmartFactory AI dashboard</p>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">User Preferences</div>
+                    <div style="padding: 20px;">
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: bold;">Theme</label>
+                            <select id="theme-selector" style="padding: 10px; border-radius: 8px; width: 100%; max-width: 300px; border: 1px solid #ddd;">
+                                <option value="light">Light</option>
+                                <option value="dark">Dark</option>
+                                <option value="blue">Blue Gradient</option>
+                                <option value="purple">Purple Gradient</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: bold;">Data Refresh Rate</label>
+                            <select id="refresh-rate" style="padding: 10px; border-radius: 8px; width: 100%; max-width: 300px; border: 1px solid #ddd;">
+                                <option value="10">10 seconds</option>
+                                <option value="30" selected>30 seconds</option>
+                                <option value="60">1 minute</option>
+                                <option value="300">5 minutes</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: bold;">Notification Preferences</label>
+                            <div style="display: flex; flex-direction: column; gap: 10px;">
+                                <label style="display: flex; align-items: center; gap: 10px;">
+                                    <input type="checkbox" checked> Critical Alerts
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px;">
+                                    <input type="checkbox" checked> Maintenance Notifications
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px;">
+                                    <input type="checkbox" checked> Supply Chain Updates
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px;">
+                                    <input type="checkbox"> AI Recommendations
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="saveSettings()">Save Settings</button>
+                    </div>
+                </div>
+
+                <div class="chart-container" style="margin-top: 20px;">
+                    <div class="chart-title">System Information</div>
+                    <div style="padding: 20px;">
+                        <div class="detail-row">
+                            <span class="detail-label">SmartFactory AI Version</span>
+                            <span class="detail-value">v2.3.1</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Last Updated</span>
+                            <span class="detail-value">June 15, 2023</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Connected Devices</span>
+                            <span class="detail-value">42</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Data Points Collected</span>
+                            <span class="detail-value">1,248,753</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">AI Models Active</span>
+                            <span class="detail-value">7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <span id="notificationText">Action completed successfully!</span>
+    </div>
+
 
 </body>
 </head>
