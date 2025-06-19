@@ -217,5 +217,52 @@
                 </div>
             </div>
 
+            <div id="maintenance" class="tab-content hidden">
+                <div class="header">
+                    <h1>Predictive Maintenance</h1>
+                    <p>AI-driven maintenance scheduling and equipment health monitoring</p>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">34%</div>
+                        <div class="metric-label">Reduction in Unplanned Downtime</div>
+                        <span class="trend up">↗ Best in class</span>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$950K</div>
+                        <div class="metric-label">Maintenance Cost Savings</div>
+                        <span class="trend up">↗ +28.3%</span>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">127</div>
+                        <div class="metric-label">Assets Under Monitoring</div>
+                    </div>
+                </div>
+
+                <div class="digital-twin">
+                    <div class="chart-title">Equipment Health Monitoring</div>
+                    <div class="factory-visual">
+                        <div class="machine-icon" data-health="95" onclick="showMachineDetails('CNC-001')">CNC<br>95%</div>
+                        <div class="machine-icon" data-health="82" onclick="showMachineDetails('ROBOT-007')" style="background: #f59e0b;">ROB<br>82%</div>
+                        <div class="machine-icon" data-health="67" onclick="showMachineDetails('PRESS-003')" style="background: #ef4444;">PRS<br>67%</div>
+                        <div class="machine-icon" data-health="91" onclick="showMachineDetails('WELD-002')">WLD<br>91%</div>
+                        <div class="machine-icon" data-health="88" onclick="showMachineDetails('CONV-005')">CNV<br>88%</div>
+                    </div>
+                    <div id="machine-details-container"></div>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" onclick="scheduleMaintenance()">Schedule Maintenance</button>
+                        <button class="btn btn-secondary" onclick="generateReport()">Generate Report</button>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">Maintenance Schedule</div>
+                    <div class="chart">
+                        <canvas id="maintenance-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+
 </body>
 </head>
