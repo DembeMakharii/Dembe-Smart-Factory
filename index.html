@@ -314,5 +314,49 @@
                 </div>
             </div>
 
+            <div id="digital-twin" class="tab-content hidden">
+                <div class="header">
+                    <h1>Digital Twin Factory</h1>
+                    <p>Real-time 3D visualization and simulation of manufacturing operations</p>
+                </div>
+                
+                <div class="digital-twin">
+                    <div class="chart-title">Factory Floor Simulation</div>
+                    <div class="factory-visual" style="height: 400px; background: linear-gradient(45deg, #1e293b 0%, #334155 100%);">
+                        <div style="position: absolute; top: 20px; left: 20px; color: white;">
+                            <div>🏭 Production Line A - Status: Active</div>
+                            <div>⚡ Real-time throughput: 245 units/hr</div>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-around; height: 100%; color: white;">
+                            <div class="machine-icon" style="background: #10b981; animation: pulse 2s infinite;">IN</div>
+                            <div style="font-size: 24px;">→</div>
+                            <div class="machine-icon" style="background: #667eea; animation: pulse 2s infinite;">M1</div>
+                            <div style="font-size: 24px;">→</div>
+                            <div class="machine-icon" style="background: #f59e0b; animation: pulse 2s infinite;">M2</div>
+                            <div style="font-size: 24px;">→</div>
+                            <div class="machine-icon" style="background: #8b5cf6; animation: pulse 2s infinite;">QC</div>
+                            <div style="font-size: 24px;">→</div>
+                            <div class="machine-icon" style="background: #10b981; animation: pulse 2s infinite;">OUT</div>
+                        </div>
+                        <div style="position: absolute; bottom: 20px; right: 20px; color: white; text-align: right;">
+                            <div>🤖 Co-bots Active: 7/8</div>
+                            <div>📊 AR/VR Training Sessions: 3 Active</div>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" onclick="startVRSession()">Start VR Training</button>
+                        <button class="btn btn-primary" onclick="launchARMode()">Launch AR Mode</button>
+                        <button class="btn btn-secondary" onclick="runSimulation()">Run Simulation</button>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">Digital Twin Performance Metrics</div>
+                    <div class="chart">
+                        <canvas id="twin-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+
 </body>
 </head>
