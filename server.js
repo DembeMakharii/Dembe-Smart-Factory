@@ -17,3 +17,14 @@ mongoose.connect('mongodb://localhost:27017/smartfactory', {
 })
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('MongoDB connection error:', err));
+
+// Define schemas
+const EquipmentSchema = new mongoose.Schema({
+    id: String,
+    status: String,
+    efficiency: Number,
+    lastMaintenance: Date,
+    nextMaintenance: Date,
+    riskLevel: String,
+    parameters: Object
+});
